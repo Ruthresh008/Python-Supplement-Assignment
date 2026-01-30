@@ -3,7 +3,7 @@
 
 def compound_interest(principal, rate, time, n):
     amount = principal * (1 + rate / (n * 100)) ** (n * time)
-    return amount - principal
+    return round(amount - principal, 2)
 
 p = 1000
 r = 5
